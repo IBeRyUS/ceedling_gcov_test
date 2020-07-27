@@ -47,9 +47,9 @@
     - TEST
   :test:
     - *common_defines
-  :test_sum:
-    - *common_defines
-    - SUM
+#  :test_sum:
+#    - *common_defines
+#    - SUM
 
 :cmock:
   :mock_prefix: mock_

@@ -5,7 +5,9 @@ int calculations_sum(int a, int b)
     int result;
 
     result = a;
+#ifdef SUM
     result = result + b;
+#endif
     return (result);
 }
 
@@ -29,13 +31,9 @@ int calculations_subtract(int a, int b)
 
 float calculations_divide(int a, int b)
 {
-    float result;
+    float result = 0;
 
-    if (b == 0)
-    {
-        result = 0;
-    }
-    else
+    if (b != 0)
     {
         result = (float)a;
         result = result / (float)b;
